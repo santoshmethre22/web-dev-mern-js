@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-16">
+    <meta name="keyword" content="HTML ">
+    <meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title of the page</title>
+    <!-- <style>
+        body{
+            
+        }
+        
+    </style> -->
+
+    <script>
+
+
+    </script>
+
+
+    <base href="">
+
+
+
+    1. 📄 Define character encoding
+
+Ensures the browser correctly displays text.
+
+<meta charset="UTF-8">
+
+👉 Prevents issues like weird symbols (�) instead of proper text.
+
+2. 📱 Make website responsive
+
+Controls how your page looks on different devices.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+👉 Very important for mobile-friendly design.
+
+3. 🔍 SEO (Search Engine Optimization)
+
+Helps search engines understand your page.
+
+<meta name="description" content="Learn MERN stack development">
+<meta name="keywords" content="MERN, React, Node, MongoDB">
+<meta name="author" content="Santosh">
+
+👉 Improves ranking and search visibility.
+
+4. 🌐 Control browser behavior
+
+Example: refresh page automatically
+
+<meta http-equiv="refresh" content="5">
+
+👉 Refreshes page every 5 seconds.
+
+5. 📲 Social media sharing (Open Graph)
+
+Controls how your page appears when shared on platforms.
+
+<meta property="og:title" content="My Website">
+<meta property="og:image" content="image.png">
+
+👉 Important for LinkedIn, Facebook previews.
+
+6. 🔐 Security & compatibility
+
+Example:
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- 👉 Ensures compatibility with browsers.
+
+🔹 Key Points
+
+Always written inside <head>
+
+Not visible to users
+
+Important for SEO + responsiveness + browser behavior
+
+🔥 Simple Summary
+
+👉 Meta tags = “information about your webpage”
+👉 Helps browser + search engines understand your site
+
+If you want, I can show you a perfect <head> template for MERN projects (very useful for interviews 🚀).
+
+and for base tag and script  tag
+
+Let’s break it down clearly 👇
+
+🔹 1. <base> Tag in HTML
+✅ What it does
+
+The <base> tag defines a base URL for all relative URLs in your webpage.
+
+👉 That means all links, images, scripts will use this as the starting path.
+
+📌 Example
+<base href="https://example.com/">
+<a href="about.html">About</a>
+
+👉 This becomes:
+
+https://example.com/about.html
+🔥 Why use <base> tag
+1. Simplifies relative paths
+
+Instead of writing long URLs everywhere:
+
+<img src="images/pic.png">
+
+👉 Automatically becomes:
+
+https://example.com/images/pic.png
+2. Useful in large projects
+
+When your site has many files
+
+When switching environments (dev → production)
+
+⚠️ Important rules
+
+Only one <base> tag allowed
+
+Must be inside <head>
+
+Affects ALL relative URLs
+
+🔥 Simple Summary
+
+👉 <base> = “starting path for all links”
+
+🔹 2. <script> Tag in HTML
+✅ What it does
+
+The <script> tag is used to add JavaScript to your webpage.
+
+👉 This makes your page dynamic and interactive
+
+📌 Types of usage
+1. Inline JavaScript
+<script>
+  alert("Hello!");
+</script>
+2. External JavaScript file
+<script src="app.js"></script>
+
+👉 Best practice for real projects
+
+🔥 Important attributes
+1. defer
+<script src="app.js" defer></script>
+
+👉 Script runs after HTML is loaded
+
+✔️ Best for performance
+
+2. async
+<script src="app.js" async></script>
+
+👉 Loads script in parallel, executes immediately when ready
+
+✔️ Faster but execution order is NOT guaranteed
+
+3. type
+<script type="module" src="app.js"></script>
+
+👉 Enables modern JS (ES modules)
+
+🔥 Why <script> is important
+
+Adds interactivity (clicks, forms, animations)
+
+Communicates with backend (API calls)
+
+Core of frameworks like React, Angular, Vue
+
+⚠️ Placement
+Old way:
+<body>
+  ...
+  <script src="app.js"></script>
+</body>
+Modern way:
+<head>
+  <script src="app.js" defer></script>
+</head>
+🔥 Simple Summary
+
+👉 <script> = “adds brain (logic) to your webpage”
+👉 <base> = “sets root path for all URLs”
+
+🚀 Interview Tip
+
+<meta> → info about page
+
+<base> → base URL
+
+<script> → functionality (JavaScript) -->
+
+    <link rel="stylesheet" href="./Head.css">
+
+    <meta http-equiv="refresh" content="30">
+</head>
+<body>
+    <h1>Lorem 
+        ipsum dolor sit 
+        amet consectetur adipisicing elit. Possimus recusandae, corporis debitis accusantium consectetur adipisci doloremque aliquam ad voluptatem culpa cupiditate nesciunt fugiat quaerat quasi placeat qui doloribus corrupti molestias.</h1>
+</body>
+</html>
