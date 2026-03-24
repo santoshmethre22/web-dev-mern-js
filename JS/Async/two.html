@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>
+        chai aur code
+    </h1>
+    <button id="stop">
+        stop
+
+    </button>
+
+
+</body>
+
+<script>
+
+
+const sasysam=function(){
+
+    console.log("hi sam ");
+    document.querySelector('h1').innerHTML=" how are you "
+}
+
+
+
+    const changeme=setTimeout(sasysam,2000);// method 
+    // availabel through browser
+
+    document.querySelector('#stop').addEventListener(
+
+    'click',function(){
+        clearTimeout(changeme);
+        console.log("stopped")
+    }
+    )
+
+
+
+</script>
+</html>

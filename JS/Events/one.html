@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <img src="" alt="">
+        </li>
+        <li>
+
+
+        </li>
+    </ul>
+    
+</body>
+
+<script>
+
+document.getElementById('owl').onclick=function(){
+    alert("owl clicked")
+}
+
+document.getElementById('owl').addEventListener('click',function(e){
+    
+    console.log(e);
+    alert('owl clicked again');
+},false);
+
+
+
+// read all about this events 
+
+// type ,timestamp,default prevented 
+// target , toelement ,srcelement
+// clientx,clienty,screenx,screeny
+//altkey,ctrlkey,shiftkey,keycode
+
+
+// bubbling ----false
+// inside to outside event propagation
+
+
+//capturing mode when true
+//
+
+
+document.getElementById('images').addEventListener(
+    "click",function(e){
+        console.log("clicked inside the ul")
+        if(e.target.tagName=='IMG'){
+
+            let removeIT=e.target.parentNode;
+            removeIT.remove();
+        }
+       // removeIT.parentNode.removeChild(removeIT);
+    }
+,false)
+
+document.getElementById('images').addEventListener(
+    "click",function(e){
+        console.log("clicked inside the own")
+        e.stopPropagation();
+
+        },false
+)
+
+
+// e.preventDefault will prevent to go to the link 
+
+</script>
+</html>
